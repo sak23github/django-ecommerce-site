@@ -1,0 +1,126 @@
+{% extends 'app/index.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block banner %}
+
+  <div class="carousel-inner" style="width:100%;height:100vh;">
+    <div class="carousel-item active" >
+        <img src="{% static 'app\images\banner\home.png' %}" class="d-block w-100" alt="banner image">
+    </div>
+    
+</div>
+</div>
+
+
+     
+   {% endblock banner %}
+   {% block information %}
+   <div class="container">
+    <div class="row bg-black text-center p-5 text-white  shadow"> 
+      <h1>Products</h1>
+        <small class="fs-5">Shopcheck offers a wide range of eyeglasses and sunglasses for purchase. This websites  have a user-friendly interface and offer a variety of filters to help customers find the perfect pair of glasses based on factors such as frame shape, lens type, color, and price range.
+
+          </small>
+    </div>
+   </div>
+   {% endblock information %}
+ 
+ {% block main-content %}
+ <div class="container">
+  <h2 class="text-center"><hr>FIND THE PERFECT FIT<hr></h2>
+  <br><br>
+  <div class="row container">
+     <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"data-wow-delay="0.6s" style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+      <div class="goodnessses techno smbg">
+        <a href="{% url 'category' 'EG' %}">
+          <div class="goodnessseccont text-center">
+            <img src="{% static 'app/images/banner/eg1.jpg' %}"
+            class="img-responsive center-block" alt="">
+            <p class="mlkpro">Eyeglasses</p>
+          </div>
+        </a>
+        </div>
+      </div>
+        
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"data-wow-delay="0.6s" style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+          <div class="goodnessses techno spro">
+            <a href="{% url 'category' 'SG' %}">
+              <div class="goodnessseccont text-center">
+                <img src="{% static 'app/images/banner/sg1.jpg' %}"
+                class="img-responsive center-block" alt="">
+                <p class="mlkpro">Sunglasses</p>
+              </div>
+            </a>
+            </div>
+          </div>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"data-wow-delay="0.6s" style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+              <div class="goodnessses techno techno">
+                <a href="{% url 'category' 'CG' %}">
+                  <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/images/banner/computer.jpg' %}"
+                    class="img-responsive center-block" alt="">
+                    <p class="techpro">Computer Glasses</p>
+                  </div>
+                </a>
+                </div>
+              </div>
+              <br><br>
+              <div class="row container">
+                <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"data-wow-delay="0.6s" style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+                 <div class="goodnessses techno smbg">
+                   <a href="{% url 'category' 'KG' %}">
+                     <div class="goodnessseccont text-center">
+                       <img src="{% static 'app/images/banner/kids.jpg' %}"
+                       class="img-responsive center-block" alt="">
+                       <p class="mlkpro">Kids Glasses</p>
+                     </div>
+                   </a>
+                   </div>
+                 </div>
+                   
+                   <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"data-wow-delay="0.6s" style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+                     <div class="goodnessses techno spro">
+                       <a href="{% url 'category' 'RG' %}">
+                         <div class="goodnessseccont text-center">
+                           <img src="{% static 'app/images/banner/rg1.jpg' %}"
+                           class="img-responsive center-block" alt="">
+                           <p class="mlkpro">Reading Glasses</p>
+                         </div>
+                       </a>
+                       </div>
+                     </div>
+                       <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"data-wow-delay="0.6s" style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+                         <div class="goodnessses buttermilk buttermilk">
+                           <a href="{% url 'category' 'SFG' %}">
+                             <div class="goodnessseccont text-center">
+                               <img src="{% static 'app/images/banner/safety.jpg' %}"
+                               class="img-responsive center-block" alt="">
+                               <p class="mlkpro">Safety Glasses</p>
+                             </div>
+                           </a>
+                           </div>
+                         </div>
+
+
+                         <div class="row bg- text-center p-5 text-black  shadow"> 
+                          
+                            <small class="fs-5"> Welcome to ShopCheck your one-stop-shop for glasses online! We are passionate about providing our customers with the highest quality products and the best possible shopping experience.
+
+                              At ShopCheck, we offer a wide variety of sunglasses,eyelasses etc from the most trusted brands in the industry. Whether you're looking for Eyeglasses, we have you covered with our extensive selection.
+                              
+                              Our user-friendly website is designed to make your shopping experience as easy and convenient as possible. You can easily browse our products by category or search for specific items, and our detailed product descriptions and customer reviews will help you make an informed decision.
+                              
+                              Thank you for choosing ShopCheck, and we look forward to providing you with the best possible online shopping experience!
+                    
+                              </small>
+                              
+                        </div>
+     
+ </div>
+<br>
+<br>
+<br>
+
+{% endblock main-content %}
+

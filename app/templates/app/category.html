@@ -1,0 +1,45 @@
+{% extends 'app/index.html' %}
+{% load static %}
+{% block title %}Category{% endblock title %}
+{% block main-content %}
+
+
+<br>
+<br>
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      {% for prod in product %}
+      <div class="col-md-2 mb-2">
+        <a href="{% url 'product-detail' prod.id %}" class="btn">
+            
+        <div class="card" style="width: 15rem; height: 20rem;">
+            
+          <img src="{{prod.product_image.url}}" class="card-img-top" alt="{{ product.name }}">
+         
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <div class="fw-bold">{{prod.title}}</div>
+               <div class="fw-bold text danger">
+                Rs.{{prod.discounted_price}}/-
+                <small class="fw-light text-text-decoration-line-through">{{prod.selling_price}}</small>
+                <p class="card-text">{{ product.description }}</p>
+               </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div  class="row  text-center p-5 text-black  shadow" style="margin-left:200px;">
+    <h3 class="fs-5">Shop the latest fashion trends in glasses with just a few clicks, on our ShopCheck ecommerce platform.</h3>
+</div>
+  
+            
+     
+
+
+{% endblock main-content %}

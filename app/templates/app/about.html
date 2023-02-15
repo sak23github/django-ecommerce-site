@@ -1,0 +1,34 @@
+{% extends 'app/index.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+{% block banner %}
+
+  <div class="carousel-inner" style="width:100%;height:100vh;">
+    <div class="carousel-item active" >
+        <img src="{% static 'app\images\banner\about.png' %}" class="d-block w-100" alt="banner image">
+    </div>
+    
+</div>
+</div>
+
+
+     
+   {% endblock banner %}
+{% block main-content %}
+<div class="container mt-3">
+    <h2 class="text-center">About Us</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">At ShopCheck, we believe that everyone deserves to see the world clearly and comfortably. That's why we offer a wide selection of stylish and functional glasses.
+
+            We are dedicated to providing an outstanding customer experience and are committed to making your shopping experience as easy and convenient as possible. Our website is designed to be user-friendly and easy to navigate, so you can find exactly what you're looking for quickly and efficiently.
+            
+            Thank you for considering ShopCheck for your eyewear needs. We look forward to helping you see the world in a whole new light!"</p>
+    </div>
+    
+   
+</div>
+<br>
+<br>
+
+{% endblock main-content %}
